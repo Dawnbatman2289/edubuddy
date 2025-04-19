@@ -1,0 +1,241 @@
+/* Add your CSS styles here */
+
+body {
+    font-family: Arial, sans-serif, 'OpenDyslexic', sans-serif; /* Added dyslexia-friendly font */
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light background for better readability */
+}
+
+h1, h2, h3 {
+    color: #333;
+    font-weight: bold;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Accessibility: Focus outline for keyboard navigation */
+a:focus, button:focus {
+    outline: 3px solid #005fcc;
+    outline-offset: 2px;
+}
+
+/* High-contrast mode */
+.high-contrast body {
+    background-color: #000;
+    color: #fff;
+}
+
+.high-contrast a {
+    color: #00f;
+}
+
+/* Gamification: Progress bar */
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.progress-bar .progress {
+    height: 20px;
+    background-color: #4caf50;
+    width: 50%; /* Example progress */
+    transition: width 0.3s ease;
+}
+
+/* Gamification: Badge styles */
+.badge {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #ff9800;
+    color: #fff;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    margin: 5px;
+}
+
+/* Accessibility Toolbar */
+.accessibility-toolbar {
+    background-color: #4F46E5;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accessibility-toolbar button {
+    background-color: #4338CA;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.accessibility-toolbar button:hover {
+    background-color: #3730A3;
+}
+
+/* AI Explanation Banner */
+.ai-explanation {
+    border-left: 4px solid #4F46E5;
+    background-color: rgba(79, 70, 229, 0.1);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Progress Circle */
+.progress-circle {
+    transform: rotate(-90deg);
+}
+
+.progress-circle path {
+    transition: stroke-dasharray 0.3s ease;
+}
+
+/* Cards */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Buttons */
+.button {
+    background-color: #4F46E5;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background-color: #3730A3;
+    transform: scale(1.05);
+}
+
+/* AI Features Section */
+#ai-features {
+    margin: 20px 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #f4f4f4, #e0e0e0);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#ai-features h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #4F46E5;
+}
+
+.ai-tutor {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.ai-tutor-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.ai-tutor-response {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Gradient Background for Header */
+header {
+    background: linear-gradient(90deg, #4F46E5, #6D28D9);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Navigation Menu */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFD700;
+}
+
+/* AI Chat Assistant */
+.ai-chat {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.ai-chat-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.ai-chat-response {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #4F46E5;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: #555;
+    animation: fadeIn 0.5s ease;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

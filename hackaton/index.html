@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon Winning Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Accessibility Toolbar -->
+    <div class="accessibility-toolbar">
+        <div>
+            <span>EduSage</span>
+            <span class="beta-badge">BETA</span>
+        </div>
+        <div>
+            <button id="textSizeBtn">A+</button>
+            <button id="dyslexiaBtn">Dx</button>
+            <button id="contrastBtn">Aa</button>
+        </div>
+    </div>
+
+    <header>
+        <h1>Revolutionizing Education with Ethical AI</h1>
+        <nav>
+            <ul>
+                <li><a href="#personalized-learning">Personalized Learning</a></li>
+                <li><a href="#accessibility">Accessibility Features</a></li>
+                <li><a href="#gamification">Gamification</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Personalized Learning Section -->
+        <section id="personalized-learning">
+            <h2>Personalized Learning</h2>
+            <p>AI adapts content based on your performance. Check your progress below:</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 70%;"></div>
+            </div>
+        </section>
+
+        <!-- Accessibility Features Section -->
+        <section id="accessibility">
+            <h2>Accessibility Features</h2>
+            <ul>
+                <li>Screen-reader compatibility</li>
+                <li>Dyslexia-friendly fonts</li>
+                <li>Real-time sign language avatars</li>
+                <li>Voice-to-text and text-to-voice support</li>
+            </ul>
+        </section>
+
+        <!-- Gamification Section -->
+        <section id="gamification">
+            <h2>Gamify Your Learning</h2>
+            <p>Complete challenges to earn badges and unlock bonus lessons!</p>
+            <div class="badges">
+                <span class="badge">Math Whiz</span>
+                <span class="badge">Science Star</span>
+                <span class="badge">Quiz Master</span>
+            </div>
+        </section>
+
+        <!-- AI Features Section -->
+        <section id="ai-features">
+            <h2>AI-Powered Features</h2>
+
+            <!-- Bias-Check System -->
+            <div class="ai-explanation">
+                <h3>Bias-Check System</h3>
+                <p>Our AI ensures fairness by monitoring for potential biases in content recommendations and assessments.</p>
+                <ul>
+                    <li>Diverse training data representing various backgrounds and perspectives.</li>
+                    <li>Regular audits to identify and mitigate biases.</li>
+                    <li>Transparent algorithms with explainable recommendations.</li>
+                </ul>
+            </div>
+
+            <!-- AI Tutor Assistant -->
+            <div class="card">
+                <h3>AI Tutor Assistant</h3>
+                <p>Ask questions and get instant help from our AI-powered tutor, powered by OpenAI.</p>
+                <div class="ai-tutor">
+                    <input type="text" placeholder="Ask your question here..." class="ai-tutor-input">
+                    <button class="button">Submit</button>
+                </div>
+                <p class="ai-tutor-response">Example: "How do I solve quadratic equations?"</p>
+            </div>
+        </section>
+
+        <!-- AI Summarization Tool -->
+        <section id="ai-summarization">
+            <h2>AI Summarization Tool</h2>
+            <p>Enter text below to get a concise summary powered by OpenAI:</p>
+            <textarea id="summarizeInput" rows="4" placeholder="Paste your text here..." class="ai-chat-input"></textarea>
+            <button id="summarizeBtn" class="button">Summarize</button>
+            <p id="summarizeResponse" class="ai-chat-response"></p>
+        </section>
+
+        <!-- AI Chatbot -->
+        <section id="ai-chatbot">
+            <h2>AI Chatbot</h2>
+            <p>Chat with our AI assistant for instant help:</p>
+            <div class="ai-chat">
+                <input type="text" id="chatInput" placeholder="Type your message..." class="ai-chat-input">
+                <button id="chatBtn" class="button">Send</button>
+            </div>
+            <p id="chatResponse" class="ai-chat-response"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Ethical AI for Education</p>
+    </footer>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
